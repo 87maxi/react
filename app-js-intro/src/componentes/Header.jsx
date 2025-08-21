@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+
+
 export function Header(){
     return <div>
         <ul>
@@ -6,6 +9,12 @@ export function Header(){
                      </li>
                      <li>
                         <Link to='/clientes' >clientes</Link>
+                    </li>
+                    <li>
+                        <Link to='/lista'>lista</Link>
+                    </li>
+                    <li>
+                        <Link to='/tx'>tx</Link>
                     </li>
                 </ul>
     </div>
