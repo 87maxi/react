@@ -1,4 +1,6 @@
 # react
+```bash
+
 yarn create vite curso-react-mini –template react
 cd curso-react-mini
 yarn
