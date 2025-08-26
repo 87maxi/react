@@ -1,0 +1,29 @@
+services:
+  node:
+    image: node:22.18.0
+    container_name: node_app
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    command: bash -c "npm install && npm start"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: node
+      POSTGRES_PASSWORD: pass12324
+      POSTGRES_DB: productos
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./dc/init-db:/docker-entrypoint-initdb.d
+
+volumes:
+  pgdata:
