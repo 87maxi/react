@@ -17,4 +17,4 @@ INSERT INTO productos (product_name, unit_price) VALUES
 ('Mouse Logitech MX Master 3', 99.99),
 ('Teclado Mecánico Keychron K2', 85.00),
 ('Monitor Dell 27"', 299.95),
-('Auriculares Sony WH-1000XM5', 399.99);
+('Auriculares Sony WH-1000XM5', 399.99);-
