@@ -87,8 +87,8 @@ export function Balance(){
 
             <button type="submit" className="btn btn-primary mb-3"  >Send</button>
             </form>
-            { ok && <div  className="alert alert-info m-3" >{ok}</div> }
-            { ko && <div  className="alert alert-danger m-3" >{ko}</div> }
+            { ok && <div  className="alert alert-info mt-3" >{ok}</div> }
+            { ko && <div  className="alert alert-danger mt-3" >{ko}</div> }
             
         </div>
     )
