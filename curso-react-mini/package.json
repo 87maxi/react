@@ -17,7 +17,8 @@
     "react-dom": "^19.1.1",
     "react-hook-form": "^7.62.0",
     "react-query": "^3.39.3",
-    "react-router-dom": "6"
+    "react-router-dom": "6",
+    "yarm": "^0.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
