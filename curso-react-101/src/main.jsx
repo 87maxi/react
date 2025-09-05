@@ -5,6 +5,7 @@ import  Lista  from "./componentes/Lista";
 import Login from "./componentes/Login";
 import   Likes   from "./componentes/Likes"
 import   Post   from "./componentes/Post"
+import   HooksCustom   from "./componentes/HooksCustom"
 
 const ftext= () => "todo"
 const farr = () => [ 1, " todo ", ftext(), [1,2,4] ]
@@ -41,6 +42,7 @@ createRoot(document.getElementById('root')).render(
         <div><Likes/></div>
 
         <div><Post/></div>
+        <div><HooksCustom/></div>
 
 
 
