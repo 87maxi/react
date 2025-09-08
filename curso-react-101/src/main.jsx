@@ -10,6 +10,7 @@ import HooksCustom from './componentes/HooksCustom.jsx';
 import Post from './componentes/Post.jsx';
 import Login from './componentes/Login.jsx';
 import Lista from './componentes/Lista.jsx';
+import HooksContext from './componentes/HooksContext.jsx';
 
 const lista = [ "valencia", "alicante", "madrid" ]
 
@@ -25,7 +26,7 @@ createRoot(document.getElementById("root")).render(
                         <Route path="/post" element={<Post numero={1} />} />
                         <Route path="/login" element={<Login sesion={{usuario: "maxi", usuario2: ""}} />} />
                         <Route path="/lista" element={<Lista a={lista} />} />
-
+                        <Route path='/hooks-context' element ={<HooksContext/>} /> 
                         <Route path="*" element={<div>404 NOT FOUND</div>} />
                     </Route>
                 </Routes>

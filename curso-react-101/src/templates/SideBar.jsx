@@ -4,11 +4,16 @@ import { Button, Offcanvas, Nav } from "react-bootstrap";
 
 
 
+
+
 function Sidebar() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+   
+
+
 
   return (
     <>
@@ -19,6 +24,7 @@ function Sidebar() {
       <Offcanvas show={show} onHide={handleClose} backdrop="static">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menú lateral</Offcanvas.Title>
+          
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
@@ -29,6 +35,7 @@ function Sidebar() {
             <Nav.Link href="/post">Post</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
             <Nav.Link href="/lista">Lista</Nav.Link>
+            <Nav.Link href="/hooks-context">Hooks Constext</Nav.Link>
             </Nav>
         </Offcanvas.Body>
       </Offcanvas>
